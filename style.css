@@ -4,6 +4,8 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: black;
+    color: white;
 }
 .header{
     text-align: center;
@@ -25,4 +27,8 @@
     margin-bottom: 20px;
     width: 70%;
     text-align: center;    
+}
+.subcolumn2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }

@@ -1,10 +1,15 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: black;
+    background: linear-gradient(to bottom, rgb(40, 55, 88), rgb(70, 13, 75));
     color: white;
 }
 .header{

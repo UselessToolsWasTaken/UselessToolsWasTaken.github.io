@@ -1,3 +1,16 @@
+@keyframes slideFadeIn{
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
 body{
     height: 100vh;
     margin: 0;
@@ -26,12 +39,16 @@ body{
     margin-bottom: 20px;
     width: 30%;
     text-align: center;    
+    background: rgb(0,0,0,0.35);
+    border-radius: 10px;
 }
 .column2{
     margin-right: 20px;
     margin-bottom: 20px;
     width: 70%;
-    text-align: center;    
+    text-align: center; 
+    background: rgb(0,0,0,0.35);
+    border-radius: 10px;
 }
 .subcolumn2{
     display: grid;

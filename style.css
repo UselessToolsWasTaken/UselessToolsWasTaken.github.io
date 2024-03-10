@@ -38,6 +38,7 @@ body{
     opacity: 0;
     transform: translateY(100%);
     animation: slideFadeIn 2s ease forwards;
+    padding: 20px;
 }
 
 .column1{

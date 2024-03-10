@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideFadeIn{
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slideText{
+    animation: slideFadeIn 1s ease forwards;
+}
+.slideText2{
+    animation: slideFadeIn 1.5s ease forwards;
+}
+.slideText3{
+    animation: slideFadeIn 2s ease forwards;
+}

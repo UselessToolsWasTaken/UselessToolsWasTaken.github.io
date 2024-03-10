@@ -1,6 +1,6 @@
 @keyframes slideFadeIn{
     from {
-        transform: translateY(100%);
+        transform: translateY(10%);
         opacity: 0;
     }
     to {
@@ -34,6 +34,12 @@ body{
     display: flex;
 }
 
+.column1, .column2{
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideFadeIn 2s ease forwards;
+}
+
 .column1{
     margin-right: 20px;
     margin-bottom: 20px;
@@ -41,6 +47,7 @@ body{
     text-align: center;    
     background: rgb(0,0,0,0.35);
     border-radius: 10px;
+    animation-delay: 0s;
 }
 .column2{
     margin-right: 20px;
@@ -49,6 +56,7 @@ body{
     text-align: center; 
     background: rgb(0,0,0,0.35);
     border-radius: 10px;
+    animation-delay: 0.5s;
 }
 .subcolumn2{
     display: grid;

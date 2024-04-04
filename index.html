@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="centered-container">
+    <div class="top-container">
         <h1>Project evaluation</h1>
         <h3>Project Morok</h3>
     </div>
@@ -30,14 +30,43 @@
         </div>
     </div>
     <div class="centered-container">
-        <h3>Submitted voice logs:</h3>
+        <h2>Submitted voice logs:</h2>
         <a href="https://youtu.be/5EuQ8ySiPNE">Voice Log 1</a>
         <a href="https://youtu.be/kDGPosyALF0">Voice Log 2</a>
         <a href="https://youtu.be/2oialxaog6M">Voice Log 3</a>
-    </div>
-    <div class="centered-container">
-        <h3>Submited reports</h3>
+        <h2>Submited reports</h2>
         <a href="bug_1.html">Recon report 001</a>
+        <br>
+        <h2>Personal Logs</h2>
+        <p>Below are personal logs from Zack Foreman, evaluate those for potential psychological and ideological deviation</p>
+        <br>
+        <h1>Confidential:</h1>
+        <p>Password required</p>
+        <form id="passwordForm">
+            <input type="password" id="passwordInput" placeholder="Enter password">
+            <button type="submit">Log in</button>
+        </form>
     </div>
+    <script>
+        document.getElementById('passwordForm').addEventListener('submit', function(event) {
+            // Prevent the form from submitting normally
+            event.preventDefault();
+    
+            var input = document.getElementById('passwordInput');
+            var password = input.value;
+    
+            // Check if the password is correct
+            if (password === 'correctPassword') {
+                // Redirect to a different page
+                window.location.href = 'bug_1.html';
+            } else {
+                // Clear the input field
+                input.value = '';
+    
+                // Optionally, show an error message
+                alert('Incorrect password. Please try again.');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,66 +1,74 @@
-@keyframes slideFadeIn{
-    from {
-        transform: translateY(10%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-
-
 body{
-    height: 100vh;
-    margin: 0;
+    background-color: black;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background: linear-gradient(to bottom, rgb(40, 55, 88), rgb(70, 13, 75));
-    color: white;
-}
-.header{
-    text-align: center;
-    margin-bottom: 20px;
+    height: 25vh;
 }
 
-.content{
+.row{
+    display:flex;
+}
+
+.column{
+    flex:1;
+}
+
+.centered-container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
 }
 
-.column1, .column2{
-    opacity: 0;
-    transform: translateY(100%);
-    animation: slideFadeIn 2s ease forwards;
-    padding: 20px;
+.report-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 
-.column1{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 30%;
-    text-align: center;    
-    background: rgb(0,0,0,0.35);
-    border-radius: 10px;
-    animation-delay: 0s;
+@keyframes glitch {
+    0% {transform: translate(0px, 0px) skew(0deg);}
+    20% {transform: translate(-2px, 0px) skew(-1deg);}
+    40% {transform: translate(2px, 0px) skew(1deg);}
+    60% {transform: translate(-1px, 0px) skew(0deg);}
+    80% {transform: translate(1px, 0px) skew(-1deg);}
+    100% {transform: translate(0px, 0px) skew(0deg);}
 }
-.column2{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 70%;
-    text-align: center; 
-    background: rgb(0,0,0,0.35);
-    border-radius: 10px;
-    animation-delay: 0.5s;
+p{
+    color: rgb(200, 255, 0);
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
 }
-.subcolumn2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+
+h1{
+    color: rgb(200, 255, 0);
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+}
+
+h2{
+    color: rgb(200, 255, 0);
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+h3{
+    color: rgb(200, 255, 0);
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+a{
+    color: rgb(115, 255, 0);
 }
